@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FTLabAct3: Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>FTLabAct3: Simple Calculator using HTML, CSS, and JS</h1>
+
+    <h2>Objective:</h2>
+    <p>Student will create a functional and simple calculator. Also, this activity lets the students to:</p>
+    <ul>
+      <li>Implement Advanced CSS for layout design and transitions</li>
+      <li>Use JavaScript to handle basic arithmetic operations such as addition, subtraction, multiplication, and division</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+      <li>This activity should be done individually.</li>
+      <li>Use separate files for content, presentation, and behavior.</li>
+      <li>Use either flexbox or grid to layout the buttons in the calculator.</li>
+      <li>The buttons should have hover effects. Any transition property will do.</li>
+      <li>Read the criteria for grading carefully.</li>
+    </ol>
+
+    <h2>Example:</h2>
+  </div>
+
+  <div class="calculator">
+    <div class="display-container">
+      <input type="text" id="display" disabled />
+    </div>
+    <div class="buttons">
+      <button onclick="clearDisplay()" class="clear">C</button>
+      <button onclick="deleteLast()" class="delete">DEL</button>
+      <button onclick="appendOperator('%')" class="operator">%</button>
+      <button onclick="appendOperator('/')" class="operator">÷</button>
+
+      <button onclick="appendNumber('7')" class="number">7</button>
+      <button onclick="appendNumber('8')" class="number">8</button>
+      <button onclick="appendNumber('9')" class="number">9</button>
+      <button onclick="appendOperator('*')" class="operator">×</button>
+
+      <button onclick="appendNumber('4')" class="number">4</button>
+      <button onclick="appendNumber('5')" class="number">5</button>
+      <button onclick="appendNumber('6')" class="number">6</button>
+      <button onclick="appendOperator('-')" class="operator">−</button>
+
+      <button onclick="appendNumber('1')" class="number">1</button>
+      <button onclick="appendNumber('2')" class="number">2</button>
+      <button onclick="appendNumber('3')" class="number">3</button>
+      <button onclick="appendOperator('+')" class="operator">+</button>
+
+      <button onclick="appendNumber('0')" class="number zero">0</button>
+      <button onclick="appendNumber('.')">.</button>
+      <button onclick="calculateResult()" class="equal">=</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>FAQs:</h2>
+    <ul>
+      <li>You are not required to copy the example above as your output.</li>
+      <li>You can freely design your calculator.</li>
+      <li>You can search for photo inspo for the layout and design.</li>
+      <li>You can use color palette generator websites.</li>
+      <li>Do not use inappropriate images and text.</li>
+      <li>Do not COPY/REUSE/RECYCLE your classmate's code.</li>
+    </ul>
+
+    <h2>Criteria for Grading:</h2>
+    <ul>
+      <li>Layout: 25%
+        <ul>
+          <li>Effective use of Flexbox/Grid properties.</li>
+          <li>Proper alignment and spacing of buttons.</li>
+        </ul>
+      </li>
+      <li>Functionality: 50%
+        <ul>
+          <li>The calculator should perform basic arithmetic such as addition, subtraction, multiplication, and division.</li>
+        </ul>
+      </li>
+      <li>Design: 25%
+        <ul>
+          <li>Consistent and visually appealing use of colors, fonts, and spacing.</li>
+          <li>Effective use of hover and transitions on buttons.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

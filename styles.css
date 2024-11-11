@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #2e2e2e;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+  }
+  
+  .header, .footer {
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    color: #ff66b3;
+    margin-bottom: 15px;
+  }
+  
+  .header h2, .footer h2 {
+    font-size: 20px;
+    color: #ff66b3;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .header p, .header ul, .footer ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #dcdcdc;
+  }
+  
+  ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .calculator {
+    width: 320px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+  }
+  
+  .display-container {
+    padding: 15px;
+    background-color: #4a4a4a;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #display {
+    width: 100%;
+    font-size: 28px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: right;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  
+  button {
+    padding: 18px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:hover {
+    background-color: #5a5a5a;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  .number {
+    background-color: #a6a6d2;
+    color: #fff;
+  }
+  
+  .operator {
+    background-color: #ff66b3;
+    color: #fff;
+  }
+  
+  .clear {
+    background-color: #ff69b4;
+    color: #fff;
+  }
+  
+  .delete {
+    background-color: #ff66b3;
+    color: #fff;
+  }
+  
+  .equal {
+    background-color: #5e35b1;
+    color: white;
+  }
+  
+  .zero {
+    grid-column: span 2;
+  }
+  
